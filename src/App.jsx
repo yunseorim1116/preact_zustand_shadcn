@@ -1,5 +1,5 @@
 // src/App.js
-import { h } from "preact";
+
 import useCounterStore from "./store";
 
 const App = () => {
