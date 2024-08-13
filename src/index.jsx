@@ -2,11 +2,13 @@ import { render } from "preact";
 import useCounterStore from "./store";
 import "./style.css";
 
+import { Button } from "../@/components/ui/button";
 export function App() {
   const { count, increment, decrement } = useCounterStore();
 
   return (
     <div>
+      <Button />
       {/* <a href="https://preactjs.com" target="_blank">
         <img src={preactLogo} alt="Preact logo" height="160" width="160" />
       </a>
