@@ -3,9 +3,13 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 import preact from "@preact/preset-vite";
 import path from "path";
+import tailwindcss from "tailwindcss";
 
 export default defineConfig({
   plugins: [preact()],
+  css: {
+    postcss: "./postcss.config.js",
+  },
   resolve: {
     alias: {
       react: "preact/compat",

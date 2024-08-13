@@ -1,7 +1,7 @@
 import { render } from "preact";
 import useCounterStore from "./store";
-import "./style.css";
 import { Button } from "./components/ui/button";
+import "./index.css";
 export function App() {
   const { count, increment, decrement } = useCounterStore();
 
