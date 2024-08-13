@@ -1,14 +1,14 @@
 import { render } from "preact";
 import useCounterStore from "./store";
-import preactLogo from "./assets/preact.svg";
 import "./style.css";
 
 export function App() {
   const { count, increment, decrement } = useCounterStore();
-  console.log(count);
+
   return (
     <div>
-      <a href="https://preactjs.com" target="_blank">
+      <Button />
+      {/* <a href="https://preactjs.com" target="_blank">
         <img src={preactLogo} alt="Preact logo" height="160" width="160" />
       </a>
       <h1>Get Started building Vite-powered Preact Apps </h1>
@@ -20,7 +20,7 @@ export function App() {
           </button>
           <button onClick={decrement}>Decrement</button>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
