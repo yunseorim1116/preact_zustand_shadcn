@@ -1,13 +1,27 @@
 import { render } from "preact";
-import useCounterStore from "./store";
-import { Button } from "./components/ui/button";
-import "./index.css";
-export function App() {
-  const { count, increment, decrement } = useCounterStore();
 
+import "./index.css";
+import { Button } from "@/components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+export function App() {
   return (
     <div>
       gd
+      <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button variant="outline">Hover</Button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Add to library</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
       <Button />
       gd
       {/* <a href="https://preactjs.com" target="_blank">
