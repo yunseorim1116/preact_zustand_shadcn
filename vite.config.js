@@ -10,6 +10,8 @@ export default defineConfig({
       react: "preact/compat",
       "react-dom": "preact/compat",
       "react/jsx-runtime": "preact/jsx-runtime",
+      "@components": resolve(__dirname, "src/components"),
+      "@utils": resolve(__dirname, "src/lib"),
     },
   },
 });
