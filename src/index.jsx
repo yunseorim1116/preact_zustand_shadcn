@@ -12,16 +12,7 @@ export function App() {
   return (
     <div>
       gd
-      <TooltipProvider>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <Button variant="outline">Hover</Button>
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>Add to library</p>
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
+      <Button variant="outline">Hover</Button>
       <Button />
       gd
       {/* <a href="https://preactjs.com" target="_blank">
